@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: weatherAPI
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/tms
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+
+gemini:
+  api:
+    url: "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent"
+    key: ${GEMINI_KEY}
+
+public:
+  portal:
+    url: "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst"
+    key: ${PUBLIC_PORTAL_KEY}
