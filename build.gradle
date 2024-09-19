@@ -34,8 +34,8 @@ dependencies {
 	implementation 'org.json:json:20230227'
 	//runtimeOnly 'mysql:mysql-connector-java:8.0.33'
 
-	implementation 'com.slack.api:slack-api-client:1.30.0'
-	implementation 'com.slack.api:slack-api-model:1.30.0'
+	//implementation 'com.slack.api:slack-api-client:1.30.0'
+	//implementation 'com.slack.api:slack-api-model:1.30.0'
 }
 
 tasks.named('test') {
