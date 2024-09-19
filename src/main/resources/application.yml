@@ -26,3 +26,8 @@ public:
   portal:
     url: "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst"
     key: ${PUBLIC_PORTAL_KEY}
+
+slack:
+  api:
+    url: "https://slack.com/api/chat.postMessage"
+    token: ${SLACK_TOKEN}
